@@ -16,7 +16,7 @@ import "./styles.scss";
 const MENU_REDIRECT = [
   {
     path: "/",
-    name: "trang chủuuuuuuuuuuuuuuuuuuu",
+    name: "trang chủ",
   },
   {
     path: "/products",
