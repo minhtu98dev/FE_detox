@@ -202,7 +202,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
             <Link to="/products">
               <button className="text-white text-2xl md:text-3xl md:font-bold">
-                Xem ngay
+                Xem ngay 1
               </button>
             </Link>
           </div>
