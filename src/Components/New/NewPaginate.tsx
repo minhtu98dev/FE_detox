@@ -8,6 +8,7 @@ const backendUrl = process.env.REACT_APP_BACKEND_URL;
 interface NewsItem {
   id: number;
   image_url: string;
+  label: string;
   title: string;
   content: string;
   description: string;
@@ -85,7 +86,7 @@ export default function NewPaginate() {
             <div className="gap-2 grid lg:grid-cols-1 lg:h-[140px]">
               <div className="flex flex-col md:flex-row md:space-x-4">
                 <img
-                  className="min-w-[180px] object-cover h-[200px] md:min-w-[220px] md:h-[150px]"
+                  className="min-w-[180px] lg:w-[180px] object-cover h-[200px] md:min-w-[220px] md:h-[150px]"
                   src={newsItem.image_url}
                   alt=""
                 />
@@ -95,7 +96,7 @@ export default function NewPaginate() {
                       {newsItem.title}
                     </h1>
                     <span className="block text-gray-500 text-xs mt-2 mb-2 md:mb-0">
-                      {truncateTitle(newsItem.content, maxLabel)}
+                      {truncateTitle(newsItem.label, maxLabel)}
                     </span>
                   </div>
                   <button
