@@ -15,9 +15,10 @@
     margin-left: 10px;
     border-radius: 10px;
     padding: 2px 10px 2px 10px;
+    color:black;
 }
 .admin-order button:hover{
-    background-color: #1f06bd;
+    background-color: #d9d6ee;
 }
 
 
@@ -130,7 +131,7 @@
     margin-bottom: 30px;
   }
   .admin-order .popup button{
-    width: 40%;
+    /* width: 40%; */
   }
   .admin-order .popup .action{
     width: 80%;

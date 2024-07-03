@@ -6,9 +6,14 @@ function InfoOrder({ uuid }) {
   const [customer, setCustomer] = useState([]);
 
   const [orders, setOrders] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [ordersPerPage, setOrdersPerPage] = useState(5);
-
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [ordersPerPage, setOrdersPerPage] = useState(5);
+  const formatCurrency = (number) => {
+    return number.toLocaleString("vi-VN", {
+      style: "currency",
+      currency: "VND",
+    });
+  };
   useEffect(() => {
     // Gọi API hoặc thao tác lấy dữ liệu đơn hàng ở đây
 
@@ -31,22 +36,22 @@ function InfoOrder({ uuid }) {
 
   // Thay đổi trang
 
-  const [status_edit, setStatusEdit] = useState("");
-  const handleEditStatus = (e) => {
-    console.log(e.target.value);
-    setStatusEdit(e.target.value);
-  };
+  // const [status_edit, setStatusEdit] = useState("");
+  // const handleEditStatus = (e) => {
+  //   console.log(e.target.value);
+  //   setStatusEdit(e.target.value);
+  // };
 
-  const convert_time = (str_time) => {
-    const date = new Date(str_time);
-    const formattedDate = `${("0" + date.getDate()).slice(-2)}/${(
-      "0" +
-      (date.getMonth() + 1)
-    ).slice(-2)}/${date.getFullYear()} ${("0" + date.getHours()).slice(-2)}:${(
-      "0" + date.getMinutes()
-    ).slice(-2)}:${("0" + date.getSeconds()).slice(-2)}`;
-    return formattedDate;
-  };
+  // const convert_time = (str_time) => {
+  //   const date = new Date(str_time);
+  //   const formattedDate = `${("0" + date.getDate()).slice(-2)}/${(
+  //     "0" +
+  //     (date.getMonth() + 1)
+  //   ).slice(-2)}/${date.getFullYear()} ${("0" + date.getHours()).slice(-2)}:${(
+  //     "0" + date.getMinutes()
+  //   ).slice(-2)}:${("0" + date.getSeconds()).slice(-2)}`;
+  //   return formattedDate;
+  // };
 
   const [userName, setUsername] = useState("");
   const [userAddress, setUserAddress] = useState("");
@@ -125,15 +130,20 @@ function InfoOrder({ uuid }) {
   return (
     <div className="dashboard_info_customer">
       {showPopup && <div className="overlay"></div>}
-      <h2>THÔNG TIN ĐƠN HÀNG</h2>
+      <h2 className="text-center mt-3">THÔNG TIN ĐƠN HÀNG</h2>
       <div className="infoCustomer">
-        <div className="title">
-          <h3></h3>
-          <h3>Thông tin khách hàng</h3>
-          <button onClick={() => openPopup({ uuid: customer.uuid })}>
+        <div className="flex justify-between items-center w-full">
+          <div className="flex-1 text-center">
+            <h3 className="text-lg font-semibold">khách hàng</h3>
+          </div>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-300 ml-4"
+            onClick={() => openPopup({ uuid: customer.uuid })}
+          >
             Sửa
           </button>
         </div>
+
         <div className="body">
           <div className="body-left">
             <p className="info_p1">Họ và tên:</p>
@@ -157,7 +167,7 @@ function InfoOrder({ uuid }) {
         </div>
       </div>
       <div className="orderCustomer">
-        <h3>Đơn hàng đã mua</h3>
+        <h3 className="mt-3">Đơn hàng đã mua</h3>
         <div className="productsOrder">
           {orders?.cartItems?.map((product, index) => (
             <div key={index} className="product_pay-item">
@@ -168,37 +178,42 @@ function InfoOrder({ uuid }) {
                   style={{ width: "50px", height: "50px" }}
                 />
                 <div className="infor">
-                  <h3>{product.product_name}</h3>
-                  <p>Số lượng: {product.quantity}</p>
+                  <div>
+                    <h4 className="font-bold text-lg">
+                      {product.product_name}
+                    </h4>
+                    <p>Số lượng: {product.quantity}</p>
+                  </div>
                   <p>{formatPrice(product.price * product.quantity)}đ</p>
                 </div>
               </div>
             </div>
           ))}
-          <hr className="horizontal-line" />
-          <div className="tong">
-            <p>Tổng:</p> <p>{orders?.billTotal}</p>
+          <hr className="horizontal-line mt-3 mb-3" />
+          <div className="tong font-bold text-xl">
+            <p>Tổng:</p> <p>{formatCurrency(orders?.billTotal || 0)}</p>
           </div>
         </div>
       </div>
       {showPopup && (
         <div className="popup_edit_customer">
           {/* <EditOrder></EditOrder> */}
-          <h2>Thay đổi thông tin khách hàng</h2>
+          <h2 className="mb-5">Thay đổi thông tin khách hàng</h2>
 
-          <div className="info">
-            <div className="change_info">
-              <p>Họ và tên: </p>
+          <div>
+            <div className="grid grid-cols-2 mb-5">
+              <p>Họ và tên</p>
               <input
                 type="text"
                 id="name"
                 value={userName}
                 placeholder="name"
                 onChange={(e) => setUsername(e.target.value)}
+                className="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
               />
             </div>
-            <div className="change_info">
+            <div className="grid grid-cols-2 mb-5">
               <p>Email: </p>
               <input
                 type="text"
@@ -206,10 +221,11 @@ function InfoOrder({ uuid }) {
                 value={userEmail}
                 placeholder="email"
                 onChange={(e) => setUserEmail(e.target.value)}
+                className="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
               />
             </div>
-            <div className="change_info">
+            <div className="grid grid-cols-2 mb-5">
               <p>Phone: </p>
               <input
                 type="text"
@@ -217,10 +233,11 @@ function InfoOrder({ uuid }) {
                 value={userPhone}
                 placeholder="phone"
                 onChange={(e) => setUserPhone(e.target.value)}
+                className="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
               />
             </div>
-            <div className="change_info">
+            <div className="grid grid-cols-2 mb-5">
               <p>Địa chỉ:</p>
               <input
                 type="text"
@@ -228,12 +245,13 @@ function InfoOrder({ uuid }) {
                 value={userAddress}
                 placeholder="địa chỉ"
                 onChange={(e) => setUserAddress(e.target.value)}
+                className="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 required
               />
             </div>
           </div>
 
-          <div className="action">
+          <div className="grid grid-cols-2">
             <button onClick={closePopup}>Đóng</button>
             <button onClick={ApplyEdit}>Lưu</button>
           </div>
