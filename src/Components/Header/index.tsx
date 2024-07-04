@@ -200,9 +200,6 @@ export default function Header() {
               <CircleUserRound className="mr-10 cursor-pointer header-actions-userInfo" />
               <div className="dropdown-content mr-10">
                 <div className="flex flex-col items-start ">
-                  <div className="text-lg font-medium mt-1">
-                    Xin chào {storedUsername}
-                  </div>
                   <div className="flex items-center mt-3">
                     <RiBillLine size={30} className="mr-4" />
                     <button

@@ -10,11 +10,9 @@ import {
   MediaPage,
   ForgotPasswordPage,
   CheckoutPage,
-  // ProfilePage,
-  // SearchPage
 } from "../Pages";
 
-import { HomeTemplate, AdminTemplate } from "@/Templates";
+import { HomeTemplate } from "@/Templates";
 
 import Login from "@/Pages/Login";
 import Register from "@/Pages/Register";

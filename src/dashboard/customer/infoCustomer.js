@@ -166,6 +166,7 @@ function InfoCustomer({ email }) {
               textAlign: "center",
               width: "100%",
             }}
+            className="mt-5"
           >
             Thông tin khách hàng
           </h3>
@@ -206,6 +207,7 @@ function InfoCustomer({ email }) {
             textAlign: "center",
             width: "100%",
           }}
+          className="mt-5 mb-5"
         >
           Đơn hàng đã mua
         </h3>
@@ -250,7 +252,15 @@ function InfoCustomer({ email }) {
               onClick={prevPage}
               disabled={currentPage === 1}
             >
-              Prev
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M16 19V5l-11 7z" transform="rotate(120 12 12)" />
+              </svg>
             </button>
             {Array.from(
               { length: Math.ceil(orders.length / ordersPerPage) },
@@ -271,19 +281,21 @@ function InfoCustomer({ email }) {
                 currentPage === Math.ceil(orders.length / ordersPerPage)
               }
             >
-              Next
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 5v14l11-7z" />
+              </svg>
             </button>
           </ul>
         </div>
       </div>
       {showPopup && (
         <div className="popup_edit_customer bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto relative">
-          <button
-            onClick={closePopup}
-            className="absolute top-2 right-2 bg-white text-red-600 text-2xl p-2 rounded-full"
-          >
-            <RiCloseLine />
-          </button>
           <h3 className="font-bold text-2xl text-center mb-6">
             Thay đổi thông tin khách hàng
           </h3>
@@ -347,10 +359,16 @@ function InfoCustomer({ email }) {
           </div>
           <div className="flex justify-end space-x-4 mt-6">
             <button
+              onClick={closePopup}
+              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            >
+              Hủy
+            </button>
+            <button
               onClick={ApplyEdit}
               className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
             >
-              Apply
+              Lưu
             </button>
           </div>
         </div>

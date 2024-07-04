@@ -494,11 +494,15 @@ const News = () => {
             </div>
           )}
           {showPopupDelete && (
-            <div className="popup">
-              <h2>Bạn chắc chắn xóa?</h2>
-              <div className="action">
-                <button onClick={closePopupDelete}>Đóng</button>
-                <button onClick={ApplyDelete}>Xóa</button>
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-30">
+              <div className="bg-white p-8 rounded shadow-lg">
+                <h2 className="mb-5 text-xl font-bold">
+                  Bạn muốn xóa sản phẩm này ?
+                </h2>
+                <div className="action flex justify-center mt-4">
+                  <button onClick={closePopupDelete}>Đóng</button>
+                  <button onClick={ApplyDelete}>Xóa</button>
+                </div>
               </div>
             </div>
           )}
