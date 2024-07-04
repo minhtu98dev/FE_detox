@@ -3,7 +3,7 @@ import "./product.css";
 import { RiEdit2Line } from "react-icons/ri";
 import { AiOutlineDelete } from "react-icons/ai";
 
-import TYpeProduct from "./num_type_product";
+import TYpeProduct from "../product/type_product";
 import Create_Product from "./create_product";
 import EditTypeProduct from "./edit_type_product";
 
