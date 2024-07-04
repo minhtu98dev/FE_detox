@@ -626,36 +626,26 @@ const News = () => {
             NỘI DUNG SẢN PHẨM
           </h1>
           <Editor
-            apiKey="dktrsjgv7t0oy38tkp29i0ijxq3pk9ted147urtwhky8n49u"
+            apiKey="87i9e2v29fgashkq2xdloy1y3y617e4h3ryc96bf13gl9tri"
             onInit={(evt, editor) => (editorRef.current = editor)}
             initialValue="<p>Chi tiết sản phẩm.</p>"
             init={{
               height: 300,
               menubar: false,
               plugins: [
-                "a11ychecker",
-                "advlist",
-                "advcode",
-                "advtable",
                 "autolink",
-                "checklist",
-                "markdown",
-                "lists",
+                "code",
                 "link",
+                "lists",
+                "emoticons",
                 "image",
-                "charmap",
-                "preview",
-                "anchor",
-                "searchreplace",
-                "visualblocks",
-                "powerpaste",
-                "fullscreen",
-                "formatpainter",
-                "insertdatetime",
                 "media",
                 "table",
-                "help",
                 "wordcount",
+                "fullscreen",
+                "help",
+                "charmap",
+                "advlist",
               ],
               toolbar:
                 "undo redo | casechange blocks | bold italic backcolor | " +
@@ -744,29 +734,19 @@ const News = () => {
               height: 300,
               menubar: false,
               plugins: [
-                "a11ychecker",
-                "advlist",
-                "advcode",
-                "advtable",
                 "autolink",
-                "checklist",
-                "markdown",
-                "lists",
+                "code",
                 "link",
+                "lists",
+                "emoticons",
                 "image",
-                "charmap",
-                "preview",
-                "anchor",
-                "searchreplace",
-                "visualblocks",
-                "powerpaste",
-                "fullscreen",
-                "formatpainter",
-                "insertdatetime",
                 "media",
                 "table",
-                "help",
                 "wordcount",
+                "fullscreen",
+                "help",
+                "charmap",
+                "advlist",
               ],
               toolbar:
                 "undo redo | casechange blocks | bold italic backcolor | " +
