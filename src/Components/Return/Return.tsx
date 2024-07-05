@@ -80,7 +80,7 @@ export const Return = () => {
           <h2 className="text-xl font-semibold mb-2 mt-4">Bước 1: Đăng ký</h2>
           <p>
             Khách hàng có thể liên hệ với bộ phận chăm sóc khách hàng của chúng
-            tôi qua hotline 0904 229 229 hoặc email: milkhokkaido.vn@gmail.com
+            tôi qua hotline 0904 229 229 hoặc email: Genjivietnam@gmail.com
           </p>
           <h2 className="text-xl font-semibold mb-2 mt-4">
             Bước 2: Nhận tin nhắn xác nhận đã đăng ký đổi/trả thành công và
@@ -125,9 +125,9 @@ export const Return = () => {
             đổi/trả có thể sẽ bị từ chối nếu hộp sản phẩm bị hư hỏng.
           </p>
           <p className="mt-3">
-            - Vui lòng liên hệ Bộ phận Chăm sóc Khách hàng của Fine Japan Việt
-            Nam 028 3620 620 khi có bất cứ khó khăn xảy ra trong quá trình làm
-            việc với bưu điện.
+            - Vui lòng liên hệ Bộ phận Chăm sóc Khách hàng của Genji Việt Nam
+            0904 229 229 khi có bất cứ khó khăn xảy ra trong quá trình làm việc
+            với bưu điện.
           </p>
           <p className="mt-3">
             - Điền thông tin mã số đơn hàng lên thùng hàng và gửi cho chúng tôi

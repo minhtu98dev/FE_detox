@@ -1,15 +1,9 @@
-import React, {
-  useEffect,
-  useState,
-  useCallback,
-  useDeferredValue,
-} from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
-
-import img11 from "../../assets/img_home/11.png";
-import img12 from "../../assets/img_home/12.png";
 import logofb from "../../assets/img_home/logo-fb.png";
+import baner from "../../assets/img_home/baner3.jpg";
+import baner1 from "../../assets/img_home/baner4.jpg";
 import logotiktok from "../../assets/img_home/logo-tiktok.png";
 import logoinsta from "../../assets/img_home/logo-insta.png";
 import logoyt from "../../assets/img_home/logo-yt.png";
@@ -60,12 +54,7 @@ export default function Home() {
     fetchData(backendUrl, setProductFeatured);
   }, []); // Chỉ gọi fetchData() một lần, khi component được tạo ra (mounted)
 
-  const slides: string[] = [
-    "https://images.pexels.com/photos/4443492/pexels-photo-4443492.jpeg",
-    "https://images.pexels.com/photos/5966430/pexels-photo-5966430.jpeg",
-    "https://images.pexels.com/photos/7615566/pexels-photo-7615566.jpeg",
-    "https://images.pexels.com/photos/4443507/pexels-photo-4443507.jpeg",
-  ];
+  const slides: string[] = [baner, baner1];
   useEffect(() => {
     const handlePlayButtonClick = () => {
       const videoUrl = "https://www.youtube.com/watch?v=fYUYUhdsxiY";
@@ -184,7 +173,7 @@ export default function Home() {
         {slides.map((s, index) => (
           <img
             key={index}
-            className="w-full object-cover min-h-[500px] 2xl:min-h-full"
+            className="w-full h-[500px] object-cover md:object-none md:h-[800px]"
             src={s}
             alt=""
           />

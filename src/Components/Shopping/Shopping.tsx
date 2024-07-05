@@ -7,8 +7,8 @@ export const Shopping = () => {
         Hướng Dẫn Mua Hàng
       </h1>
       <p className="mb-3">
-        Bạn có thể đặt hàng trực tuyến ở website HokkaidoVietNam.com thông qua 5
-        bước đặt hàng cơ bản.
+        Bạn có thể đặt hàng trực tuyến ở website thông qua 5 bước đặt hàng cơ
+        bản.
       </p>
 
       <section className="mb-8">

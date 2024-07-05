@@ -30,7 +30,7 @@ export const PaymentsMethod = () => {
         hướng dẫn cụ thể.
       </p>
       <p className="mb-3">
-        Khi mua sắm tại Hokkaido Việt Nam, giao dịch của bạn luôn luôn được bảo
+        Khi mua sắm tại Genji Việt Nam, giao dịch của bạn luôn luôn được bảo
         mật. Hiện tại, chúng tôi chỉ đáp ứng các đơn hàng giao trong lãnh thổ
         Việt Nam. Đội ngũ chăm sóc khách hàng của chúng tôi luôn sẵn sàng trả
         lời các các thắc mắc và giúp bạn có trải nghiệm mua sắm thật đặc biệt.

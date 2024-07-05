@@ -8,17 +8,16 @@ export const Shipping = () => {
       </h1>
       <p>
         Nhằm mục đích tạo điều kiện thuận lợi trong quá trình đặt hàng vào giao
-        nhận sản phẩm cho Quý khách, Hokkaido Việt Nam xin đưa ra quy định về
-        việc giao hàng và nhận hàng như sau:
+        nhận sản phẩm cho Quý khách, Genji Việt Nam xin đưa ra quy định về việc
+        giao hàng và nhận hàng như sau:
       </p>
       <section className="mb-8 mt-8">
         <h2 className="text-xl font-semibold mb-2">
-          Hokkaido Việt Nam miễn phí vận chuyển cho tất cả đơn hàng trên toàn
-          quốc
+          Genji Việt Nam miễn phí vận chuyển cho tất cả đơn hàng trên toàn quốc
         </h2>
         <p>
-          Hiện tại Fine Japan Việt Nam hợp tác với Sapo Express để thực hiện
-          chuyển phát các sản phẩm tới Quý khách hàng.
+          Hiện tại Genji Việt Nam hợp tác với J&T Express để thực hiện chuyển
+          phát các sản phẩm tới Quý khách hàng.
         </p>
         <p className="mt-3">
           Sau khi xác nhận thành công, đơn hàng sẽ được giao đến Quý khách trong

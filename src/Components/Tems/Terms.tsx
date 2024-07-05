@@ -8,22 +8,19 @@ export const Terms = () => {
       </h1>
 
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">1. Giới thiệu</h2>
-        <p>
-          Chào mừng bạn đến với trang Thương mại điện tử HokkaidoVietNam.com
+        <h2 className="text-xl font-semibold mb-2">1. Giới thiệu</h2>Genji
+        <p>Chào mừng bạn đến với trang Thương mại điện tử GenjiVietNam.com</p>
+        <p className="mt-3">
+          Genji Việt Nam là trang Thương mại điện tử của Công ty Cổ phần Xuất
+          Nhập Khẩu Genji Việt Nam được cấp giấy chứng nhận ĐKKD số 0109090883.
         </p>
         <p className="mt-3">
-          Hokkaido Việt Nam là trang Thương mại điện tử của Công ty Cổ phần Xuất
-          Nhập Khẩu Hokkaido Việt Nam được cấp giấy chứng nhận ĐKKD số
-          0109090883.
+          Công ty Cổ phần Xuất Nhập Khẩu Genji Việt Nam có trụ sở chính đặt tại
+          Tầng 26, Toà Tây, 54 Liễu Giai, Ba Đình, Hà Nội.
         </p>
         <p className="mt-3">
-          Công ty Cổ phần Xuất Nhập Khẩu Hokkaido Việt Nam có trụ sở chính đặt
-          tại Tầng 26, Toà Tây, 54 Liễu Giai, Ba Đình, Hà Nội.
-        </p>
-        <p className="mt-3">
-          Khi bạn truy cập vào website Hokkaido Việt Nam của chúng tôi có nghĩa
-          là bạn đồng ý với các điều khoản này. Website có quyền chỉnh sửa, thay
+          Khi bạn truy cập vào website Genji Việt Nam của chúng tôi có nghĩa là
+          bạn đồng ý với các điều khoản này. Website có quyền chỉnh sửa, thay
           đổi, thêm hoặc lược bỏ bất kỳ phần nào trong Điều khoản mua bán hàng
           hóa này vào bất cứ lúc nào. Các thay đổi có hiệu lực ngay khi được
           đăng trên website mà không cần thông báo trước. Và khi bạn tiếp tục sử
@@ -42,39 +39,38 @@ export const Terms = () => {
           2. Hướng dẫn sử dụng website
         </h2>
         <p>
-          Khi truy cập vào website của Hokkaido Việt Nam, bạn phải đảm bảo đủ 18
+          Khi truy cập vào website của Genji Việt Nam, bạn phải đảm bảo đủ 18
           tuổi, hoặc có sự giám sát của cha mẹ hay người giám hộ hợp pháp. Vui
           lòng đảm bảo bạn có đầy đủ hành vi dân sự để thực hiện các giao dịch
           mua bán hàng hóa theo quy định hiện hành của pháp luật Việt Nam.
         </p>
         <p className="mt-3">
           Chúng tôi sẽ cũng cấp cho bạn một tài khoản (Account) sử dụng để bạn
-          có thể mua sắm trên website hokkaidovietnam trong khuôn khổ Điều khoản
-          sử dụng đã đề ra.
+          có thể mua sắm trên website Genjivietnam trong khuôn khổ Điều khoản sử
+          dụng đã đề ra.
         </p>
         <p className="mt-3">
           Bạn sẽ phải đăng ký tài khoản với thông tin cá nhân xác thực và phải
           cập nhật nếu có bất kỳ thay đổi nào trong quá trình sử dụng. Mỗi cá
-          nhân khi truy cập vào website của hokkaidovietnam phải có trách nhiệm
-          với mật khẩu, tài khoản và hoạt động của mình trên web. Bên cạnh đó,
-          bạn phải thông báo ngay cho chúng tôi biết khi tài khoản bị truy cập
-          trái phép. Đối với những thiệt hại hoặc mất mát gây ra do bạn không
-          tuân thủ quy định và các điều khoản mua bán đã cam kết phía
-          hokkaidovietnam sẽ không chịu bất kỳ trách nhiệm nào, dù trực tiếp hay
-          gián tiếp.
+          nhân khi truy cập vào website của Genjivietnam phải có trách nhiệm với
+          mật khẩu, tài khoản và hoạt động của mình trên web. Bên cạnh đó, bạn
+          phải thông báo ngay cho chúng tôi biết khi tài khoản bị truy cập trái
+          phép. Đối với những thiệt hại hoặc mất mát gây ra do bạn không tuân
+          thủ quy định và các điều khoản mua bán đã cam kết phía Genjivietnam sẽ
+          không chịu bất kỳ trách nhiệm nào, dù trực tiếp hay gián tiếp.
         </p>
         <p className="mt-3">
           Nghiêm cấm sử dụng bất kỳ phần nào của website này dưới mọi hình thức
           với mục đích thương mại hoặc nhân danh bất kỳ đối tác thứ ba nào nếu
-          không được sự cho phép bằng văn bản từ phía hokkaidovietnam. Nếu vi
-          phạm bất cứ điều nào trong đây, chúng tôi sẽ hủy tài khoản của bạn mà
-          không cần báo trước.
+          không được sự cho phép bằng văn bản từ phía Genjivietnam. Nếu vi phạm
+          bất cứ điều nào trong đây, chúng tôi sẽ hủy tài khoản của bạn mà không
+          cần báo trước.
         </p>
         <p className="mt-3">
-          Bạn sẽ nhận được email quảng cáo từ website Hokkaido Việt Nam của
-          chúng tôi trong suốt quá trình đăng kí. Nếu cảm thấy bị làm phiền, bạn
-          có thể từ chối nhận email bằng cách nhấp vào đường link ở dưới cùng
-          trong mọi email quảng cáo.
+          Bạn sẽ nhận được email quảng cáo từ website Genji Việt Nam của chúng
+          tôi trong suốt quá trình đăng kí. Nếu cảm thấy bị làm phiền, bạn có
+          thể từ chối nhận email bằng cách nhấp vào đường link ở dưới cùng trong
+          mọi email quảng cáo.
         </p>
       </section>
 
@@ -103,16 +99,16 @@ export const Terms = () => {
           điện thoại và địa chỉ của bạn để thuận tiện cho giao dịch.
         </p>
         <p className="mt-3">
-          Hokkaido Việt Nam cam kết sẽ cung cấp thông tin giá cả chính xác nhất
-          cho người tiêu dùng. Tuy nhiên, đôi lúc vẫn có sai sót xảy ra, ví dụ
-          như trường hợp giá sản phẩm không hiển thị chính xác trên website hoặc
-          sai giá, tùy theo từng trường hợp phía chúng tôi sẽ liên hệ hướng dẫn
-          hoặc thông báo hủy đơn hàng đó cho quý khách.
+          Genji Việt Nam cam kết sẽ cung cấp thông tin giá cả chính xác nhất cho
+          người tiêu dùng. Tuy nhiên, đôi lúc vẫn có sai sót xảy ra, ví dụ như
+          trường hợp giá sản phẩm không hiển thị chính xác trên website hoặc sai
+          giá, tùy theo từng trường hợp phía chúng tôi sẽ liên hệ hướng dẫn hoặc
+          thông báo hủy đơn hàng đó cho quý khách.
         </p>
         <p className="mt-3">
-          Hokkaido Việt Nam cũng có quyền từ chối hoặc hủy bỏ bất kỳ đơn hàng
-          nào của quý khách dù đơn hàng đó đã hay chưa được xác nhận hoặc đã
-          thanh toán.
+          Genji Việt Nam cũng có quyền từ chối hoặc hủy bỏ bất kỳ đơn hàng nào
+          của quý khách dù đơn hàng đó đã hay chưa được xác nhận hoặc đã thanh
+          toán.
         </p>
       </section>
 
@@ -125,8 +121,8 @@ export const Terms = () => {
           đã thực hiện các biện pháp sau đây:
         </p>
         <p className="mt-3">
-          Thông báo cho bộ phận chăm sóc khách hàng của Hokkaido Việt Nam về
-          việc hủy giao dịch qua hotline: 0904 229 229
+          Thông báo cho bộ phận chăm sóc khách hàng của Genji Việt Nam về việc
+          hủy giao dịch qua hotline: 0904 229 229
         </p>
       </section>
 
@@ -136,21 +132,21 @@ export const Terms = () => {
         </h2>
         <p className="mt-3">
           Khách hàng có trách nhiệm cung cấp thông tin đầy đủ và chính xác khi
-          tham gia giao dịch tại website Hokkaido Việt Nam. Trong trường hợp
-          khách hàng nhập sai thông tin và gửi vào site thương mại điện tử
-          Hokkaido Việt Nam, chúng tôi có quyền từ chối thực hiện giao dịch.
-          Ngoài ra, trong mọi trường hợp, khách hàng đều có quyền đơn phương
-          chấm dứt giao dịch nếu đã thực hiện các biện pháp sau đây:
+          tham gia giao dịch tại website Genji Việt Nam. Trong trường hợp khách
+          hàng nhập sai thông tin và gửi vào site thương mại điện tử Genji Việt
+          Nam, chúng tôi có quyền từ chối thực hiện giao dịch. Ngoài ra, trong
+          mọi trường hợp, khách hàng đều có quyền đơn phương chấm dứt giao dịch
+          nếu đã thực hiện các biện pháp sau đây:
         </p>
         <p className="mt-3">
           Liên hệ với bộ phậm CSKH của chúng tôi qua hotline 0904 229 229 hoặc
-          lời nhập nhắn tại địa chỉ email: milkhokkaido.vn@gmail.com
+          lời nhập nhắn tại địa chỉ email: Genjivietnam@gmail.com
         </p>
         <p className="mt-3">
           Trả lại sản phẩm đã nhận và không có dấu hiệu khui mở hoặc đã sử dụng.
         </p>
         <p className="mt-3">
-          Trong trường hợp sai thông tin phát sinh từ phía Hokkaido Việt Nam mà
+          Trong trường hợp sai thông tin phát sinh từ phía Genji Việt Nam mà
           chúng tôi có thể chứng minh đó là lỗi của hệ thống, chúng tôi sẽ chịu
           hoàn toàn trách nhiệm và đền bù cho khách hàng.
         </p>
@@ -164,9 +160,9 @@ export const Terms = () => {
           Mọi quyền sở hữu trí tuệ (đã đăng ký hoặc chưa đăng ký), nội dung
           thông tin và tất cả các thiết kế, văn bản, đồ họa, phần mềm, hình ảnh,
           video, âm nhạc, âm thanh, biên dịch phần mềm, mã nguồn và phần mềm cơ
-          bản đều là tài sản của Hokkaido Việt Nam. Toàn bộ nội dung của trang
-          web được bảo vệ bởi luật bản quyền của Việt Nam và các công ước quốc
-          tế. Bản quyền đã được bảo lưu.
+          bản đều là tài sản của Genji Việt Nam. Toàn bộ nội dung của trang web
+          được bảo vệ bởi luật bản quyền của Việt Nam và các công ước quốc tế.
+          Bản quyền đã được bảo lưu.
         </p>
       </section>
 
@@ -192,8 +188,8 @@ export const Terms = () => {
         <p className="mt-3">
           Quý khách không được sử dụng bất kỳ chương trình, công cụ hay hình
           thức nào khác để can thiệp vào hệ thống hay làm thay đổi cấu trúc dữ
-          liệu. Website Hokkaido Việt Nam cũng nghiêm cấm việc phát tán, truyền
-          bá hay cổ vũ cho bất kỳ hoạt động nào nhằm can thiệp, phá hoại hay xâm
+          liệu. Website Genji Việt Nam cũng nghiêm cấm việc phát tán, truyền bá
+          hay cổ vũ cho bất kỳ hoạt động nào nhằm can thiệp, phá hoại hay xâm
           nhập vào dữ liệu của hệ thống. Cá nhân hay tổ chức vi phạm sẽ bị tước
           bỏ mọi quyền lợi cũng như sẽ bị truy tố trước pháp luật nếu cần thiết.
         </p>
@@ -205,7 +201,7 @@ export const Terms = () => {
 
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">
-          10. Các phương thức thanh toán áp dụng tại hokkaidovietnam
+          10. Các phương thức thanh toán áp dụng tại Genjivietnam
         </h2>
         <p className="mt-3">
           Quý khách có thể tham khảo các phương thức thanh toán sau đây và lựa
@@ -251,11 +247,11 @@ export const Terms = () => {
         </h2>
         <p className="mt-3">
           Bất kỳ tranh cãi, khiếu nại hoặc tranh chấp phát sinh từ hoặc liên
-          quan đến giao dịch tại hokkaidovietnam hoặc các Quy định và Điều kiện
-          này đều sẽ được giải quyết bằng hình thức thương lượng, hòa giải,
-          trọng tài và/hoặc Tòa án theo Luật bảo vệ Người tiêu dùng Chương 4 về
-          Giải quyết tranh chấp giữa người tiêu dùng và tổ chức, cá nhân kinh
-          doanh hàng hóa, dịch vụ.
+          quan đến giao dịch tại Genjivietnam hoặc các Quy định và Điều kiện này
+          đều sẽ được giải quyết bằng hình thức thương lượng, hòa giải, trọng
+          tài và/hoặc Tòa án theo Luật bảo vệ Người tiêu dùng Chương 4 về Giải
+          quyết tranh chấp giữa người tiêu dùng và tổ chức, cá nhân kinh doanh
+          hàng hóa, dịch vụ.
         </p>
       </section>
 
